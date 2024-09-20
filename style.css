@@ -1,0 +1,435 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out; /* Adiciona transição a todos os elementos */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-column {
+    position: fixed; /* Fixa a coluna na tela */
+    left: 0;
+    top: 0;
+    width: 60px; /* Tamanho pequeno quando fechado */
+    height: 100%;
+    background-image: url(a.jpg);
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: width 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+    z-index: 1000; /* Garante que a coluna fique acima de outros conteúdos */
+}
+
+.nav-column.open {
+    width: 200px; /* Tamanho maior quando o menu está aberto */
+}
+
+.nav-column .imagens {
+    width: 40px; /* Tamanho pequeno das imagens quando fechado */
+    height: 40px;
+    transition: width 0.3s ease, height 0.3s ease; /* Transição suave para o tamanho das imagens */
+}
+
+.nav-column.open .imagens {
+    width: 60px; /* Tamanho maior das imagens quando o menu está aberto */
+    height: 60px;
+}
+
+.nav-column a {
+    display: flex; /* Alinha imagem e texto em linha */
+    align-items: center; /* Alinha imagem e texto verticalmente no centro */
+    padding: 10px;
+    text-decoration: none;
+    color: #fffdfd;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-column a:hover {
+    background-color: #ddd;
+}
+
+.nav-column .textoI {
+    font-size: 16px; /* Tamanho da fonte padrão */
+}
+
+.nav-column.open .textoI {
+    font-size: 18px; /* Tamanho maior quando o menu está aberto */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Garante que o botão fique acima de outros conteúdos */
+}
+
+.menu-toggle.open {
+    background-color: #666; /* Cor quando o menu está aberto */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão apenas em dispositivos móveis */
+    }
+}
+
+.content {
+    margin-left: 80px; /* Deixa espaço para a coluna de navegação */
+    padding: 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out; /* Adiciona transição a todos os elementos */
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.imagens {
+    width: 2;
+    height: 1;
+}
+.nav-column {
+    position: fixed; /* Fixa a coluna na tela */
+    left: 0;
+    top: 0;
+    width: 8vh;
+    height: 100%;
+    background-image: url(a.jpg);
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+.nav-column:hover {
+    width: 30vh; /* Tamanho maior quando em hover */
+    background-position: center;
+}
+.nav-column .imagens {
+    width: 40px; /* Tamanho pequeno das imagens quando fechado */
+    height: 40px;
+    transition: width 0.3s ease, height 0.3s ease; /* Transição suave para o tamanho das imagens */
+}
+.nav-column:hover .imagens {
+    width: 60px; /* Tamanho maior das imagens quando o menu está em hover */
+    height: 60px;
+}
+.nav-column:hover .textoI {
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.nav-column a:hover {
+    background-color: #ddd;
+}
+.nav-column a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fffdfd;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    margin-left: 220px; /* Deixa espaço para a coluna de navegação */
+    padding: 20px;
+}
+
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #212121; /* Cor de fundo escura */
+    color: #fff;
+  }
+  .divRef {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    border: 4vh;
+  }
+
+  .divRef:hover {
+    background-position: center; 
+  }
+  .btn1:hover {
+    text-shadow: 20 20 20px rgba(0, 0, 0, 0.6);
+    width: 13vh;
+    height: 4vh;
+    background-color: #3f3f3f;
+  }
+  .btn2:hover {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    width: 13vh;
+    height: 4vh;
+    background-color: #3f3f3f;
+  }
+  .ref1 {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);;
+  }
+  .divemcima {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 40vh;
+    margin-left: 18vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .ref {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+  }
+  .divRef:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);;
+
+  }
+  .ref:hover {
+    font-size: 3vh;
+  }
+  /* Responsivo */
+  
+  @media (max-width: 768px) {
+    .div1 {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+    .div2 {
+      margin-bottom: 10px;
+    }
+    .div3 {
+      padding: 10px;
+    }
+    .pre2 {
+      padding: 10px;
+      overflow-x: auto; /* Adiciona scrollbar horizontal para o bloco de código */
+    }
+    .pre2 img {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+    }
+  }
+
+  button {
+    border-radius: 15px;
+    background-color: #4c4848;
+    color: white;
+    font-size: 2vh;
+
+  }
+
+  .botao {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+  }
+
+  .div1 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url(marvel.jpg); /* Cor de fundo escura */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: background-position 0.5s ease; /* Adiciona transição ao fundo do layout */
+  }
+  
+  .div2 {
+    margin-bottom: 20px;
+  }
+  
+  .div3 {
+    background-color: #555; /* Cor de fundo escura */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out; /* Adiciona transição ao fundo do layout */
+  }
+  
+  .h1Titulo {
+    font-weight: bold;
+    color: #66d9ef; /* Cor de título futurista */
+    transition: color 0.3s ease-in-out; /* Adiciona transição ao título */
+    font-size: 36px;
+  }
+  
+  .h2P {
+    font-weight: bold;
+    color: #66d9ef; /* Cor de título futurista */
+    transition: color 0.3s ease-in-out; /* Adiciona transição ao título */
+    font-size: 24px;
+  }
+  
+  .para {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc; /* Cor de texto escura */
+  }
+  
+  .imagemPiramide {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; /* Efeito de borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Efeito de sombra escura */
+    transition: box-shadow 0.3s ease-in-out; /* Adiciona transição ao efeito de sombra */
+  }
+  @media (max-width: 768px) {
+    .imagemPiramide {
+      max-width: 80%;
+      height: auto;
+      margin: 10px;
+    }
+    
+  }
+  @media (max-width <= 600px) {
+    .div1{
+        margin-left: calc(6px + 20px); /* Aumenta o espaçamento à esquerda para evitar que a div1 encoste no menu */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .imagemPiramide {
+      max-width: 60%;
+      height: auto;
+      margin: 5px;
+    }
+  }
+  .pre2 {
+    background-color: #333; /* Cor de fundo para o bloco de código */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out; /* Adiciona transição ao fundo do bloco de código */
+    overflow-x: auto; /* Adiciona scrollbar horizontal para o bloco de código */
+  }
+  
+  .pre2 img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%; /* Efeito de borda circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out; /* Adiciona transição ao efeito de sombra */
+  }
+  
+  /* Hover Effects */
+  
+  .h1Titulo:hover, .h2P:hover {
+    color: #fff; /* Cor de título ao passar o mouse */
+  }
+  
+  .imagemPiramide:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Efeito de sombra ao passar o mouse */
+  }
+  
+  .pre2:hover {
+    background-color: #444; /* Cor de fundo do bloco de código ao passar o mouse */
+  }
+  
+  .div3:hover {
+    background-color: #555; /* Cor de fundo do layout ao passar o mouse */
+  }
+  .div1:hover {
+    background-position: center;
+  }
+
+  .bt1.maior {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+.bt2.maior {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+@media (max-width: 480px) {
+    .div1 {
+      max-width: 70%;
+      margin: 20px ;
+    }
+    .div2 {
+      margin-bottom: 10px;
+    }
+    .div3 {
+      padding: 10px;
+    }
+    .pre2 {
+      padding: 10px;
+      overflow-x: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .div1 {
+      max-width: 80%;
+      margin: 20px auto;
+    }
+    .div2 {
+      margin-bottom: 10px;
+    }
+    .div3 {
+      padding: 10px;
+    }
+    .pre2 {
+      padding: 10px;
+      overflow-x: auto;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .div1 {
+      max-width: 70%;
+      margin: 20px auto;
+    }
+    .div2 {
+      margin-bottom: 10px;
+    }
+    .div3 {
+      padding: 10px;
+    }
+    .pre2 {
+      padding: 10px;
+      overflow-x: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav-column {
+        width: 13%;
+      align-items: center; /* Centraliza os links na coluna */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-column {
+      width: 13%; 
+      margin-bottom: 10px; /* Aumenta o espaçamento entre os links */
+    }
+  }
