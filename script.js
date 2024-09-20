@@ -45,18 +45,3 @@
             btn1.classList.remove('maior');
             btn2.classList.add('maior');
         }
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.getElementById('menuToggle');
-            const navColumn = document.getElementById('navColumn');
-            const body = document.body;
-        
-            menuToggle.addEventListener('click', () => {
-                navColumn.classList.toggle('open');
-            });
-        
-            body.addEventListener('click', (event) => {
-                if (!navColumn.contains(event.target) && !menuToggle.contains(event.target)) {
-                    navColumn.classList.remove('open');
-                }
-            });
-        });

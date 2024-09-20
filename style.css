@@ -66,19 +66,6 @@ body {
 }
 
 /* Menu Toggle Button */
-.menu-toggle {
-    display: none; /* Inicialmente escondido */
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1001; /* Garante que o botão fique acima de outros conteúdos */
-}
 
 .menu-toggle.open {
     background-color: #666; /* Cor quando o menu está aberto */
